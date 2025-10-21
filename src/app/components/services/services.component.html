@@ -1,0 +1,183 @@
+<section id="servicesTitle">
+    <div class="container contIni"> 
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-title" data-aos="fade-right">
+                    <h2>Explore our wide range of services</h2>
+                    <p>Adapt your spaces to your preferences and lifestyle. Let us bring life to your garden.</p>
+                    <span *ngIf="mobileComponentService.isMobile">Prueba de moviles</span>
+                </div>
+            </div>
+        </div> 
+    </div>
+</section>
+<section id="landscape" class="section-bg">
+    <div class="container contIni"> 
+         
+        <div class="row content">
+            <div class="col-lg-6 col-sm-12 card-service member" data-aos="fade-right" data-aos-delay="100" [ngStyle]="cardStyle">
+                <h2>Landscape</h2>
+                <p>Design, install, and maintain outdoor areas. Lawn Care and Sprinkler System Installation</p>
+            </div>
+            <div class="col-lg-6 col-sm-12 pt-4 pt-lg-0" data-aos="fade-left" data-aos-delay="200">            
+                <div id="myCarousel1" class="d-flex align-items-center carousel slide carousel-fade" [ngStyle]="currenStyle">                 
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#myCarousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                
+                    <div class="carousel-inner img-rad">                    
+                        <div class="carousel-item active" data-bs-interval="3000">                    
+                            <img src="assets/img/banners/banner1.1.jpeg" alt="banner1" width="500" height="600">
+                        </div>                    
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="assets/img/banners/banner2.1.JPEG" alt="banner1" width="500" height="600">
+                        </div>                 
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+            
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="fireplaces" class="section-bg">
+    <div class="container contIni">          
+        <div class="row content">
+            <div class="col-lg-6 card-service member" data-aos="fade-left" data-aos-delay="100" [ngStyle]="cardStyle" *ngIf="mobileComponentService.isMobile">
+                <h2>Fireplaces</h2>
+                <p>Wood-burning fire pits and Fireplaces for backyards, Design and Construction</p>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-right" data-aos-delay="200">
+            
+                <div id="myCarouselFP" class="d-flex align-items-center carousel slide carousel-fade" [ngStyle]="currenStyle">
+                
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarouselFP" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarouselFP" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#myCarouselFP" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                
+                    <div class="carousel-inner img-rad">                    
+                        <div class="carousel-item active" data-bs-interval="3000">                    
+                            <img src="assets\img\carousel\services\fireplace\fp_1.1.jpg" alt="banner1" width="500" height="600">
+                        </div>                    
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="assets\img\carousel\services\fireplace\fp_2.JPG" alt="banner1" width="500" height="600">
+                        </div>                 
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarouselFP" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+            
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarouselFP" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+                </div>
+            </div>
+            <div class="col-lg-6 card-service member" data-aos="fade-left" data-aos-delay="100" [ngStyle]="cardStyle" *ngIf="!mobileComponentService.isMobile">
+                <h2>Fireplaces</h2>
+                <p>Wood-burning fire pits and Fireplaces for backyards, Design and Construction</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="Walkways" class="section-bg">
+    <div class="container contIni">          
+        <div class="row content">
+            <div class="col-lg-6 card-service member" data-aos="fade-right" data-aos-delay="100" [ngStyle]="cardStyle">
+                <h2>Walkways</h2>
+                <p>Flagstone, stamped concret and pavers, Stone Retaining Walls, Design and Construction</p>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left" data-aos-delay="200">
+                <div id="myCarouselW" class="d-flex align-items-center carousel slide carousel-fade" [ngStyle]="currenStyle">
+                
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarouselW" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarouselW" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#myCarouselW" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                
+                    <div class="carousel-inner img-rad">                    
+                        <div class="carousel-item active" data-bs-interval="3000">                    
+                            <img src="assets/img/banners/banner1.1.jpeg" alt="banner1" width="500" height="600">
+                        </div>                    
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="assets/img/banners/banner2.1.JPEG" alt="banner1" width="500" height="600">
+                        </div>                 
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarouselW" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+            
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarouselW" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id="fireplaces" class="section-bg">
+    <div class="container contIni">          
+        <div class="row content">
+            <div class="col-lg-6 card-service member" data-aos="fade-left" data-aos-delay="100" [ngStyle]="cardStyle" *ngIf="mobileComponentService.isMobile">
+                <h2>Fireplaces</h2>
+                <p>We provide services for Residential and Commercial Business</p>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-right" data-aos-delay="200">
+            
+                <div id="myCarouselFPL" class="d-flex align-items-center carousel slide carousel-fade" [ngStyle]="currenStyle">
+                
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarouselFPL" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarouselFPL" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#myCarouselFPL" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                
+                    <div class="carousel-inner img-rad">                    
+                        <div class="carousel-item active" data-bs-interval="3000">                    
+                            <img src="assets/img/banners/banner1.1.jpeg" alt="banner1" width="500" height="600">
+                        </div>                    
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="assets/img/banners/banner2.1.JPEG" alt="banner1" width="500" height="600">
+                        </div>                 
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarouselFPL" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+            
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarouselFPL" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+                </div>
+            </div>
+            <div class="col-lg-6 card-service member" data-aos="fade-left" data-aos-delay="100" [ngStyle]="cardStyle" *ngIf="!mobileComponentService.isMobile">
+                <h2>Others</h2>
+                <p>Window Wells, French Drains and Snow Removal Services</p>
+            </div>
+        </div>
+    </div>
+</section>

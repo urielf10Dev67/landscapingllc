@@ -1,0 +1,45 @@
+/* Vendor CSS Files  */
+
+.contIni{
+    display: block;
+    position: relative;
+    top: 60px;
+}
+
+.cZum{
+    background: url("/assets/img/clases/Zu.png") center center;
+    background-size:contain;
+}
+
+.slide{
+    padding: 0% 0% 0% 0%;
+}
+
+.spLogo{
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+.title-big::after{
+    /* text-align: center; */
+    left: 40vw;
+}
+
+.title-big{
+    text-align: center;
+}
+
+/* .section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #009970;
+  bottom: 0;
+  left: 40vw;
+}
+
+.section-title {
+  text-align: center;
+} */

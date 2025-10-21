@@ -1,0 +1,24 @@
+.contIni{
+    display: block;
+    position: relative;
+    top: 60px;
+}
+
+.cZum{
+    background: url("../../../assets/img/clases/Zu.png") center center;
+    background-size:contain;
+}
+
+.slide{
+    padding: 0% 0% 0% 0%;
+}
+
+.spLogo{
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+
+.img-rad{
+    border-radius: 30px;
+}

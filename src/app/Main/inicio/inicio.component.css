@@ -1,0 +1,43 @@
+/* Vendor CSS Files  */
+
+
+
+.contIni{
+    display: block;
+    position: relative;
+    top: 60px;
+}
+
+.cZum{
+    background: url("../../../assets/img/clases/Zu.png") center center;
+    background-size:contain;
+}
+
+.slide{
+    padding: 0% 0% 10% 0%;
+}
+
+.spLogo{
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+
+.text-inside-img{
+    position: absolute;
+    right: 15%;
+    bottom: 4.25rem;
+    left: 20%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+
+#backgroundhome{
+    background-image: url("../../../assets/img/banners/banner1.4.jpeg");
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
