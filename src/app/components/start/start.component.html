@@ -5,16 +5,12 @@
     
             <div class="row content">
               <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100" style="text-align: center;">
-                <!-- <h2>Landscaping Contractor</h2> -->
                 <img src="assets/img/logo/js_logo1.png" class="img-fluid" style="height: 12vw;" alt="">
-                <!-- <h3>Backyards and garden design</h3> -->
                 <div class="social-links text-center text-md-right pt-3 pt-md-0">
                   Landscaping and gardening contractors            
                   <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                   <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                   <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                  <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                  <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
                 </div>
               </div>
               <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left" data-aos-delay="200" style="text-align: justify;">
@@ -29,18 +25,8 @@
                     Call Us Today For A Free Estimate 303-269-9343
                   </a>
                 </div>
-                
-                <!-- <ul>
-                  <li><i class="ri-check-double-line"></i> He fallado más de 9.000 tiros en mi carrera. He perdido casi 300 juegos. 26 veces, han confiado en mí para hacer un tiro ganador y he perdido. He fallado una y otra y otra vez en mi vida. Y es por eso que tenga éxito. <strong>Michael Jordan</strong></li>
-                  <li><i class="ri-check-double-line"></i> La suerte es proporcional al sudor. Cuanto más sudas, más suerte tienes. <strong>Ray Kroc</strong></li>
-                  <li><i class="ri-check-double-line"></i> No se trata de si te derriban, se trata de si te levantas.<strong>Vince Lombardi</strong></li>
-                </ul>
-                <p class="fst-italic">
-                  Si entrenas duro, no solo seras duro, <strong>Seras duro de superar.</strong>
-                </p> -->
               </div>
             </div>
-    
           </div>
       </section>
     
@@ -60,33 +46,41 @@
               <div class="row">
                 <div class="col-md-6 d-flex align-items-stretch">
                   <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="icon"><i class="bx bx-landscape"></i></div>
-                    <h4><a href="">Landscape</a></h4>
-                    <p>Design, install, and maintain outdoor areas. Lawn Care and Sprinkler System Installation</p>
+                    <a (click)="showServices(true)" href="#servicesTitle" style="color: #36343a;">
+                      <div class="icon"><i class="bx bx-landscape"></i></div>
+                      <h4><a (click)="showServices(true)" href="#servicesTitle">Landscape</a></h4>
+                      <p>Design, install, and maintain outdoor areas. Lawn Care and Sprinkler System Installation</p>
+                    </a>
                   </div>
                 </div>
 
                 <div class="col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
                   <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="icon"><i class='bx bx-walk'></i></div>
-                    <h4><a href="">Walkways</a></h4>
-                    <p>Flagstone, stamped concrete and pavers, Stone Retaining Walls, Design and Construction</p>
+                    <a (click)="showServices(true)" href="#servicesTitle" style="color: #36343a;">
+                      <div class="icon"><i class='bx bx-walk'></i></div>
+                      <h4><a (click)="showServices(true)" href="#servicesTitle">Walkways</a></h4>
+                      <p>Flagstone, stamped concrete and pavers, Stone Retaining Walls, Design and Construction</p>
+                    </a>
                   </div>
                 </div>
 
                 <div class="col-md-6 d-flex align-items-stretch mt-4">
                   <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="icon"><i class="bx bxs-flame"></i></div>
-                    <h4><a href="">Fireplaces</a></h4>
-                    <p>Wood-burning fire pits and Fireplaces for backyards, Design and Construction</p>
+                    <a (click)="showServices(true)" href="#servicesTitle" style="color: #36343a;">
+                      <div class="icon"><i class="bx bxs-flame"></i></div>
+                      <h4><a (click)="showServices(true)" href="#servicesTitle">Fireplaces</a></h4>
+                      <p>Wood-burning fire pits and Fireplaces for backyards, Design and Construction</p>
+                    </a>
                   </div>
                 </div>
 
                 <div class="col-md-6 d-flex align-items-stretch mt-4">
                   <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="icon"><i class="bx bx-cloud-snow"></i></div>
-                    <h4><a href="">Others</a></h4>
-                    <p>Window Wells, French Drains and Snow Removal Services</p>
+                    <a (click)="showServices(true)" href="#servicesTitle" style="color: #36343a;">
+                      <div class="icon"><i class="bx bx-cloud-snow"></i></div>
+                      <h4><a (click)="showServices(true)" href="#servicesTitle">Others</a></h4>
+                      <p>Window Wells, French Drains and Snow Removal Services</p>
+                    </a>
                   </div>
                 </div>
 
@@ -117,9 +111,7 @@
                         <div class="pic"><img src="assets/img/services/landscape.jpg" class="img-fluid" alt=""></div>
                         <div class="member-info">
                         <span class="subtitle-member">Improve your <strong>well-being</strong> and health</span>
-                        <!-- <span>Instructor de Box</span> -->
                         <p>Develop much healthier habits with outdoor spaces that promote relaxation and help reduce stress for family or visitors. </p>
-                        <!-- <p>Design, install, and maintain outdoor areas. Lawn Care and Sprinkler System Installation</p> -->
                         </div>
                     </div>
                     </div>
@@ -129,9 +121,7 @@
                         <div class="pic"><img src="assets/img/services/firepit.jpg" class="img-fluid" alt=""></div>
                         <div class="member-info">
                         <span class="subtitle-member">Create <strong>harmonious</strong> spaces</span>
-                        <!-- <span class="subtitle-member">Control erosion and <strong>protect</strong> soils</span> -->
                         <p>Create visually appealing environments through design and the selection of plants, fountains, wood-burning fire pits, and other decorative elements.</p>
-                        <!-- <p>Select plants and install water retention systems to minimize soil loss and maintain the stability of your property's terrain.</p> -->
                         </div>
                     </div>
                     </div>
@@ -141,7 +131,6 @@
                         <div class="pic"><img src="assets/img/services/splinker2.jpg" class="img-fluid" alt=""></div>
                         <div class="member-info">
                         <span class="subtitle-member"><strong>Increase</strong> the value of your property</span>
-                        <!-- <p>Wood-burning fire pits and Fireplaces for backyards, Design and Construction</p> -->
                         <p>Increase the value of your real estate with highly attractive landscaping for future buyers or to increase your equity.</p>
                         </div>
                     </div>
@@ -165,17 +154,9 @@
             </div>
 
             <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
-              
-              <!-- <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [mapTypeId]="mapTypeId"  style="border:0; width: 100%; height: 300px;">
-                <agm-marker [latitude]="lat" [longitude]="lng" ></agm-marker>
-              </agm-map> -->
-
-              <!-- <iframe style="border:0; width: 100%; height: 270px;" src="" frameborder="0" allowfullscreen></iframe> -->
-
               <div class="info mt-4">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Denver, Co US</h4>
-                <!-- <p>Calle Guadalajara & Calle Tlalnepantla, Jardines de Morelos 5ta, C.P. 55070 Ecatepec de Morelos, Estado de México</p> -->
               </div>
               <div class="row">
                 <div class="col-lg-6 mt-4">
@@ -193,31 +174,6 @@
                   </div>
                 </div>
               </div>
-
-              <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                  </div>
-                  <div class="col-md-6 form-group mt-3 mt-md-0">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                  </div>
-                </div>
-                <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                </div>
-                <div class="form-group mt-3">
-                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                </div>
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
-              </form> -->
-
-
             </div>
           </div>
 

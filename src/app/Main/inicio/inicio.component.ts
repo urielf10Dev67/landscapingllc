@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ServicesComponent } from 'src/app/components/services/services.component';
 import { StartComponent } from 'src/app/components/start/start.component';
 
@@ -17,6 +17,7 @@ export class InicioComponent implements OnInit {
   zoom: number;
   mapTypeId: string;
 
+  @ViewChild(StartComponent) startComp;
 
   constructor() { 
 
@@ -49,4 +50,12 @@ export class InicioComponent implements OnInit {
     this.startNow = false;
   }
 
+  receiveMessage($event) {
+    if($event == true)
+    {
+      this.servicesNow = $event;
+      this.startNow = false;
+      this.projectsNow = false;
+    }
+  }
 }
