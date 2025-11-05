@@ -10,7 +10,6 @@ import { ServicesComponent } from './components/services/services.component';
 import { StartComponent } from './components/start/start.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
