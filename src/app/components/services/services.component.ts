@@ -10,7 +10,8 @@ export class ServicesComponent implements OnInit {
   showIf: boolean= true;
   currenStyle: Record<string,string> = {};
   cardStyle: Record<string,string> = {};
-
+  isActive: boolean = false;
+  lightboxImageUrl: string = 'assets/img/carousel/services/others/ot_1.jpg';
   // @param mobileComponentService Servicio para verificar si se está accediendo desde un dispositivo móvil
   constructor(
     public mobileComponentService: MobileComponentService,
@@ -26,6 +27,17 @@ export class ServicesComponent implements OnInit {
         'padding': '10px'
       };
     }
+  }
+
+  showlightbox(img: string) {
+     this.isActive = true;
+     this.lightboxImageUrl = "assets/img/carousel/services/" + img + ".jpg";
+     console.log('imgsrc: ' + this.lightboxImageUrl);
+
+  }
+
+  closelightbox() {
+     this.isActive = false;
   }
 
 }

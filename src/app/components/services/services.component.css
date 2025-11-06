@@ -22,3 +22,79 @@
 .img-rad{
     border-radius: 30px;
 }
+
+/* css de lightbox */
+
+.lightbox {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+
+.lightbox.activo {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  pointer-events: auto;
+}
+
+.lightbox .cerrar {
+  width: 5em;
+  height: 3em;
+  background: orange;
+  margin: 0 0 1em;
+  color: var(--negro);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: var(--blanco);
+  -webkit-box-shadow: 0.5em 0.5em 1em var(--sombra-ppal), -0.5em -0.5em 1em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+          box-shadow: 0.5em 0.5em 1em var(--sombra-ppal), -0.5em -0.5em 1em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  cursor: pointer;
+}
+
+.lightbox .cerrar:hover {
+  color: var(--negro);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: var(--blanco);
+  -webkit-box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 0.5em 0.5em 1em var(--sombra-ppal), inset -0.5em -0.5em 1em var(--sombra-sec);
+          box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 0.5em 0.5em 1em var(--sombra-ppal), inset -0.5em -0.5em 1em var(--sombra-sec);
+}
+
+.lightbox .grande {
+  width: 80%;
+  height: 80vh;
+  background: lightblue;
+  color: var(--negro);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: var(--blanco);
+  -webkit-box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+          box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
