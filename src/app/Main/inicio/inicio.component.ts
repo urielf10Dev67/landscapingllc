@@ -11,6 +11,7 @@ export class InicioComponent implements OnInit {
   public servicesNow: boolean = false;
   public startNow: boolean = true;
   public projectsNow: boolean = false;
+  public serviceShowModule: string = "";
 
   lat: number;
   lng: number;
@@ -34,6 +35,7 @@ export class InicioComponent implements OnInit {
 
   public showServices(value: boolean){
     this.servicesNow = value;
+    this.serviceShowModule = "allServices";
     this.startNow = false;
     this.projectsNow = false;
   }
@@ -51,11 +53,13 @@ export class InicioComponent implements OnInit {
   }
 
   receiveMessage($event) {
-    if($event == true)
+    if($event != "")
     {
-      this.servicesNow = $event;
+      this.servicesNow = true;
       this.startNow = false;
       this.projectsNow = false;
+      this.serviceShowModule = $event;
+      console.log('event: ' + $event);
     }
   }
 }

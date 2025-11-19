@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { MobileComponentService } from 'src/app/services/mobile-component.service';
 
 @Component({
@@ -12,6 +12,8 @@ export class ServicesComponent implements OnInit {
   cardStyle: Record<string,string> = {};
   isActive: boolean = false;
   lightboxImageUrl: string = 'assets/img/carousel/services/others/ot_1.jpg';
+  @Input() serviceModule: string;
+  serviceShowModule: string = "";
   // @param mobileComponentService Servicio para verificar si se está accediendo desde un dispositivo móvil
   constructor(
     public mobileComponentService: MobileComponentService,
@@ -27,6 +29,9 @@ export class ServicesComponent implements OnInit {
         'padding': '10px'
       };
     }
+    this.serviceShowModule = "";
+    this.serviceShowModule = this.serviceModule;
+    console.log("serviceModule: " + this.serviceModule);
   }
 
   showlightbox(img: string) {

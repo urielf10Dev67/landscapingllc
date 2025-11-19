@@ -8,13 +8,13 @@ import {Clipboard} from '@angular/cdk/clipboard';
   styleUrls: ['./start.component.css']
 })
 export class StartComponent implements OnInit {
-  public servicesMustShow: boolean = false;
+  public servicesMustShow: string = "";
   lat: number;
   lng: number;
   zoom: number;
   mapTypeId: string;
 
-  @Output() messageEvent = new EventEmitter<boolean>();
+  @Output() messageEvent = new EventEmitter<string>();
   
   constructor(private clipboard: Clipboard) {//
     this.lat = 19.591489;
@@ -26,9 +26,9 @@ export class StartComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public showServices(value: boolean){
+  showServices(value: string){
     this.servicesMustShow = value;
-    this.messageEvent.emit(this.servicesMustShow);
+    this.messageEvent.emit(value);
   }
 
   copyContent(): void {

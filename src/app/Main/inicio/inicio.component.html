@@ -78,7 +78,7 @@
 
 
       <div id="services1" *ngIf="servicesNow">
-        <component-services></component-services>
+        <component-services [serviceModule]="serviceShowModule"></component-services>
       </div>
 
       <div id="start" *ngIf="startNow">
